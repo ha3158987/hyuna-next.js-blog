@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 
 // server-side에서만 동작 (JS 번들링에 포함되지 않음)
+// getStaticProps: page디렉토리 안에서만 실행
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
