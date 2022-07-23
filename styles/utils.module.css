@@ -50,3 +50,13 @@
 .lightText {
   color: #666;
 }
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
