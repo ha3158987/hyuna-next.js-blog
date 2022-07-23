@@ -20,21 +20,17 @@ export default function Home({allPostsData}) {
   return (
     <Layout home>
       <Head>
-        <title>{"Hyuna's Log"}</title>
+        <title>{"Dico's Log"}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>안녕하세요, 소소하게 오래 개발하고 싶은 개발자입니다.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <p>안녕하세요, 소소하게 오래 개발하고 싶은 개발자 Dico 입니다.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`${process.env.assetPrefix}/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
