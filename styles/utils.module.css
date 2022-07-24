@@ -44,7 +44,7 @@
 }
 
 .listItem {
-  margin: 0 0 1.25rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .lightText {
@@ -59,4 +59,8 @@
   min-height: 100vh;
   font-size: 1.5rem;
   line-height: 1.4;
+}
+
+.listBorder {
+  border-top: 0.5px solid rgb(228, 227, 227);
 }
