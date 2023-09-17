@@ -3,9 +3,12 @@ title: "Lighthouse로 측정한 React DOM 최적화"
 date: "2022-08-22"
 ---
 
-## 뉴스룸 페이지 (수정전)
+## 뉴스룸 페이지
 
-![images/newsroom-before.mov](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/2dda3362-3492-4243-bb9e-e30c582b2be2)
+### 수정 전
+
+- 불필요한 리렌더링이 많이 일어나는 상태. 버튼 하나만 눌러도 전체 페이지가 전부 리렌더링 된다.
+  ![images/newsroom-before.mov](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/2dda3362-3492-4243-bb9e-e30c582b2be2)
 
 ### 1. 메인뉴스와 컨텐츠 컴포넌트 분리
 
