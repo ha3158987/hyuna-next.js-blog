@@ -3,9 +3,9 @@ title: "Lighthouse로 측정한 React DOM 최적화"
 date: "2022-08-22"
 ---
 
-## 뉴스룸 페이지
+## 뉴스룸 페이지 (수정전)
 
-[![images/newsroom-before.mov]()](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d0747dc9-5e28-4ba4-ae02-7497137643f7/%ED%99%94%EB%A9%B4_%EA%B8%B0%EB%A1%9D_2022-07-06_%EC%98%A4%ED%9B%84_6.57.55_%282%29.mov?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220824%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220824T094358Z&X-Amz-Expires=86400&X-Amz-Signature=5d15677e84afa6e7da7b54744a4b0b53d9cda450ad4808636d4577ec91632345&X-Amz-SignedHeaders=host&x-id=GetObject)
+![images/newsroom-before.mov](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/2dda3362-3492-4243-bb9e-e30c582b2be2)
 
 ### 1. 메인뉴스와 컨텐츠 컴포넌트 분리
 
