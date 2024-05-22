@@ -140,7 +140,9 @@ support 페이지를 들어갈 수 없도록 만들고, sitemap.xml 에서 suppo
 
 ## 결과
 
-### 1. 키워드 검색 노출이 향상되면서 특정 페이지의 진입률이 폭발적으로 증가했다!!
+### 1. 페이지 진입률 증가
+
+키워드 검색 노출이 향상되면서 특정 페이지의 진입률이 폭발적으로 증가했다!!
 
 ![image-17](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/e8c53fdf-e756-4adb-b4bb-da69cdf2063b)
 
@@ -154,6 +156,10 @@ support 페이지를 들어갈 수 없도록 만들고, sitemap.xml 에서 suppo
 
 ![image-20](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/babe9d7d-5181-4f8b-9c26-fce982041a88)
 
-### 2. Health Score가 큰 폭으로 향상되었다! (12 ➡️ 74)
+### 2. Health Score 향상 (12 ➡️ 100)
 
-12점이었던 Health Score가 최종적으로 74점까지 향상되었다 👍
+개선사항 프로덕션 반영 후 Ahref에서 다시 Health Score를 측정했더니 큰 폭으로 향상된 점을 확인할 수 있었다.
+
+최종적으로 12점에서 100점으로 향상되었다 👍
+
+![image-21](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/c9c1ba23-a218-48f4-bd4f-a2673ebb3826)
