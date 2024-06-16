@@ -1,5 +1,5 @@
 ---
-title: "Next.js로 운영을 하면 생기는 일 ep.1: SSR에서 마운트 순서를 제어하면 안되는 이유"
+title: "Next.js로 서비스 운영하며 생긴 일 ep.1: Hydration 에러 해결하려다..."
 date: "2024-05-31"
 ---
 
@@ -96,7 +96,7 @@ function App({ Component, pageProps }: AppProps) {
 ## 💡 오늘의 교훈: Next.js의 pre-rendering을 막지 말 것 (WIP)
 
 - 부끄럽지만 이번 일은 Next.js의 동작방식을 제대로 이해하지 못하고 눈앞의 에러만 해결하려다 일어난 일이었다.
-- "Next.js가 SEO 특화되어 있다"라는 건 공식처럼 외우고 있으면서도 pre-rendering으로 생성하고 있던 걸 마운트 이후 시점에 생성하도록 바꾸면 SEO에 영향을 줄 수밖에 없다는 사실을 간과했었다. 마치 SSR에게 CSR과 같이 동작하라고 주문한 격.
+- "Next.js가 SEO 특화되어 있다"라는 건 공식처럼 외우고 있으면서도 pre-rendering으로 생성하고 있던 걸 마운트 이후 시점에 생성하도록 바꾸면 SEO에 영향을 줄 수밖에 없다는 사실을 간과했었다. 마치 SSR에게 CSR과 같이 동작하라고 주문한 후에 "아니, 왜 뼈대를 안만들었어?" 라고 물은 격.
 - 즉, pre-rendering을 임의로 조정해서까지 렌더링 순서를 제어해야한다면, SSR 방식이 적절하지 않을 수 있다.
 - 그래서 개발환경에서 나던 hydration 에러는 어떻게 픽스했는 지!? 는 **to be continued**...
 
