@@ -11,9 +11,12 @@ date: "2024-05-31"
 
 - 설상가상으로 슬랙 등 기타 플랫폼에서 링크 공유 시 나오던 메타 정보도 언제부터인가 보이질 않고 있었다...<br>
 
-| BEFORE                                                                                                         | AFTER                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/cefe4d92-a0f2-4f3e-8d94-f1fa78c0ac8a) | ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/3c8b6eb7-165d-47ef-84ad-d0243bb7b8f9) |
+  **BEFORE**
+
+  ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/cefe4d92-a0f2-4f3e-8d94-f1fa78c0ac8a)
+
+  **AFTER**
+  ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/3c8b6eb7-165d-47ef-84ad-d0243bb7b8f9)
 
 ## 🔍 배경: 어떻게 된 거냐면...
 
@@ -69,16 +72,26 @@ function App({ Component, pageProps }: AppProps) {
 
 - 원인이 좁혀졌기 때문에 `_app.tsx`에 있던 `useMounted()` hook과 `isMounted`에 의존하던 부분을 제거했다.
 - 그리고 POSTMAN에서 localhost:3000으로 GET을 요청해서 리턴받는 HTML을 비교해보았다. 제거 전 / 후 `<head>`의 og meta 태그에서 확연한 차이가 있었다:
-  | BEFORE | AFTER |
-  | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-  | ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/5952a859-9ea4-46dd-b1e7-8750e9839c9e) | ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/f15c7626-1629-4ff9-95e9-bca218f72f5a) |
+
+  **BEFORE**
+
+  ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/5952a859-9ea4-46dd-b1e7-8750e9839c9e)
+
+  **AFTER**
+
+  ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/f15c7626-1629-4ff9-95e9-bca218f72f5a)
 
   - 이전에는 보이지 않던 메타태그들이 `useMounted()` 제거 후 확실하게 보여지기 시작했다!
 
 - 적용 후에 Health Score도 이전처럼 돌아온 걸 확인할 수 있었다:
-  | BEFORE | AFTER |
-  | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-  |![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/f4bc3bce-d34b-43ce-a8f1-909abfa1f163)|![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/d720adf8-391d-4d14-9fbf-2dd0281f6595)|
+
+  **BEFORE**
+
+  ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/f4bc3bce-d34b-43ce-a8f1-909abfa1f163)
+
+  **AFTER**
+
+  ![image](https://github.com/ha3158987/hyuna-next.js-blog/assets/65105537/d720adf8-391d-4d14-9fbf-2dd0281f6595)
 
 ## 💡 오늘의 교훈: Next.js의 pre-rendering을 막지 말 것 (WIP)
 
